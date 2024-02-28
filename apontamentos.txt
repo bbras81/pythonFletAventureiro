@@ -1,0 +1,31 @@
+import flet as ft 
+
+# def main(page: ft.Page):
+#     pass
+    
+# ft.app(target=main) 
+
+# Forma de criar os mesmos elementos por class
+class App:
+    def __init__(self, page: ft.Page):
+        pass
+    
+ft.app(target=App)
+
+Para rodar o app, o comendo é :
+    flet run <nome.py>
+
+Para rodar o comando para Web:
+    flet run <nome.py> -w
+
+
+Aula de primeiros passos
+
+import flet as ft 
+
+def main(page: ft.Page):
+    mensagem = ft.Text(value="Ola Mundo!")
+    page.add(mensagem, mensagem, mensagem)
+    
+    
+ft.app(target=main) 
